@@ -21,27 +21,3 @@ export async function POST(req: any) {
 		return NextResponse.json({ message: "Error", error }, { status: 500 });
 	}
 }
-
-// const data = [
-// 	{ category: "Rent" },
-// 	{ category: "Food" },
-// 	{ category: "Transportation" },
-// 	{ category: "Utilities" },
-// 	{ category: "Entertainment" },
-// 	{ category: "Merchandise" },
-// 	{ category: "Other Services" },
-// 	{ category: "Dining" },
-// 	{ category: "Health Care" },
-// 	{ category: "Other Travel" },
-// 	{ category: "Payment/Credit" },
-// 	{ category: "Gas/Automotive" },
-// ];
-
-// data.forEach((category) => {
-// 	fetch("http://localhost:3000/api/transactions/categories", {
-// 		// definiaimo, attraverso la fetch, l'end-point da utilizzare per comunicare con il DB
-// 		method: "POST", // definiamo il tipo di chiamata
-// 		body: JSON.stringify(category),
-// 		headers: { "Content-Type": "application/json" },
-// 	});
-// });

@@ -194,9 +194,8 @@ To get a local copy up and running follow these steps.
 ### Setting up the Environment
 
 1. Create a new file named `.env` in the root directory of the project.
-2. Add the following environment variables to the `.env` file:
+2. Add the following environment variable to the `.env` file:
    ```sh
-    NEXT_PUBLIC_API_URL=http://localhost:3000/api
     MONGODB_URI=...
    ```
    Replace the `MONGODB_URI` with your actual MongoDB connection string.

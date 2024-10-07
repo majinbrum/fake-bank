@@ -21,14 +21,3 @@ export async function POST(req: any) {
 		return NextResponse.json({ message: "Error", error }, { status: 500 });
 	}
 }
-
-// const data = [];
-
-// data.forEach((transaction) => {
-// 	fetch("http://localhost:3000/api/transactions", {
-// 		// definiaimo, attraverso la fetch, l'end-point da utilizzare per comunicare con il DB
-// 		method: "POST", // definiamo il tipo di chiamata
-// 		body: JSON.stringify(transaction),
-// 		headers: { "Content-Type": "application/json" },
-// 	});
-// });
