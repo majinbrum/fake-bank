@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import NavItem from "./NavItem";
+import Image from "next/image";
 
 const navItems = [
 	{
@@ -86,10 +87,10 @@ function Aside() {
 	return (
 		<aside className='flex flex-col justify-between  px-4 py-8  w-1/4 min-w-64 max-w-80 overflow-y-auto bg-white shadow-sm rounded-xl  dark:bg-gray-900'>
 			<div className='flex flex-col items-center '>
-				<img className='mb-4 ring ring-offset-8 ring-violet-400 ring-offset-gray-100 bg-emerald-400 object-cover w-24 h-24 mx-2 rounded-full' src='/images/Fry.png' alt='avatar' />
+				<Image className='mb-4 ring ring-offset-8 ring-violet-400 ring-offset-gray-100 bg-emerald-400 object-cover w-24 h-24 mx-2 rounded-full' src='/images/Fry.png' alt='avatar' priority />
 				<h4 className='font-bold text-gray-800 dark:text-gray-200'>Philip J. Fry</h4>
 				<p className='text-sm font-medium text-gray-500 dark:text-gray-400'>Super User</p>
-				<img src='/images/credit-card3.png' className='-rotate-90 max-h-72' alt='credit card' />
+				<Image src='/images/credit-card3.png' className='-rotate-90 max-h-72' alt='credit card' priority />
 			</div>
 
 			<div className='flex flex-col'>
